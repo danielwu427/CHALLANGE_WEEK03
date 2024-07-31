@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Noto+Sans+TC:wght@100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+body{
+    font-family: 'Noto Sans Traditional Chinese','Roboto',sans-serif;
+    line-height: 1.5;
+}
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+// abstracts 
+ // (variable)
+ $primaryColor:#AA0601;
+ $secondaryColor:#FBF2F2;
+
+
+ // (common)
+.container{
+    max-width: 1320px; //因為下方paddong 推了12px，目前總寬變成1272 所以要加回來
+    margin: 0 auto;
+    padding: 0 12px;  //因為設計的column是左右推12，所以最外兩側是12
+}
+.d-flex{
+    display: flex;
+}
+.fs-5{
+    font-size: 20px;
+}
+.my-25{
+    margin: 25px 0;
+}
+
+// layout (header、footer)
+.header{
+    background-color:$primaryColor;
+}
+.header .container{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo{
+    width: 80px; ;
+}
+.header ul{
+    gap: 64px;
+    justify-content: space-between;
+    align-items: center;
+    a{
+        display: block;
+        padding: 25px 0;
+        color: #FFFF;
+    }
+}
+// page (home)
+.banner{
+    background-image: url(../image/home-header.png);
+}
+// components (btn)
